@@ -2,7 +2,7 @@ name: FlutterFlow Firebase Deployment
 on:
   push:
     branches:
-      - flutterflow
+      - live
     paths:
       - "lib/**"
 
@@ -41,4 +41,4 @@ jobs:
             repoToken: '${{ secrets.GITHUB_TOKEN }}'
             firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
             projectId: '${{ secrets.FIREBASE_PROJECT_ID }}'
-            channelId: flutterflow
+            channelId: live
