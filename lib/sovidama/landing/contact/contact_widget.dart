@@ -190,7 +190,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                           child: Container(
                             alignment: AlignmentDirectional(0.0, -1.0),
                             child: Container(
-                              width: 900.0,
+                              width: 1000.0,
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
@@ -250,143 +250,141 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                   lineHeight: 1.3,
                                                 ),
                                           ),
-                                          Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.start,
+                                          Wrap(
+                                            spacing: 16.0,
+                                            runSpacing: 16.0,
+                                            alignment: WrapAlignment.start,
                                             crossAxisAlignment:
-                                                CrossAxisAlignment.center,
+                                                WrapCrossAlignment.start,
+                                            direction: Axis.horizontal,
+                                            runAlignment: WrapAlignment.start,
+                                            verticalDirection:
+                                                VerticalDirection.down,
+                                            clipBehavior: Clip.none,
                                             children: [
-                                              Expanded(
-                                                flex: 1,
-                                                child: wrapWithModel(
-                                                  model: _model.textFieldModel1,
-                                                  updateCallback: () =>
-                                                      safeSetState(() {}),
-                                                  child: TextFieldWidget(
-                                                    label: FFLocalizations.of(
-                                                            context)
-                                                        .getText(
-                                                      'obnlymdw' /* Name */,
-                                                    ),
-                                                    labelPresent: true,
-                                                    helper: '',
-                                                    helperPresent: false,
-                                                    leadingIconPresent: false,
-                                                    trailingIconPresent: false,
-                                                    hint: FFLocalizations.of(
-                                                            context)
-                                                        .getText(
-                                                      '821zejt7' /* Full name */,
-                                                    ),
-                                                    value: '',
-                                                    onChange: '',
-                                                    onSubmit: '',
-                                                    variant: 'outlined',
-                                                    error: false,
+                                              wrapWithModel(
+                                                model: _model.textFieldModel1,
+                                                updateCallback: () =>
+                                                    safeSetState(() {}),
+                                                child: TextFieldWidget(
+                                                  label: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    'obnlymdw' /* Name */,
                                                   ),
+                                                  labelPresent: true,
+                                                  helper: '',
+                                                  helperPresent: false,
+                                                  leadingIconPresent: false,
+                                                  trailingIconPresent: false,
+                                                  hint: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    '821zejt7' /* Full name */,
+                                                  ),
+                                                  value: '',
+                                                  onChange: '',
+                                                  onSubmit: '',
+                                                  variant: 'outlined',
+                                                  error: false,
                                                 ),
                                               ),
-                                              Expanded(
-                                                flex: 1,
-                                                child: wrapWithModel(
-                                                  model: _model.textFieldModel2,
-                                                  updateCallback: () =>
-                                                      safeSetState(() {}),
-                                                  child: TextFieldWidget(
-                                                    label: FFLocalizations.of(
-                                                            context)
-                                                        .getText(
-                                                      '5gk8i2pv' /* Company */,
-                                                    ),
-                                                    labelPresent: true,
-                                                    helper: '',
-                                                    helperPresent: false,
-                                                    leadingIconPresent: false,
-                                                    trailingIconPresent: false,
-                                                    hint: FFLocalizations.of(
-                                                            context)
-                                                        .getText(
-                                                      'cyoksaet' /* Organization name */,
-                                                    ),
-                                                    value: '',
-                                                    onChange: '',
-                                                    onSubmit: '',
-                                                    variant: 'outlined',
-                                                    error: false,
+                                              wrapWithModel(
+                                                model: _model.textFieldModel2,
+                                                updateCallback: () =>
+                                                    safeSetState(() {}),
+                                                child: TextFieldWidget(
+                                                  label: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    '5gk8i2pv' /* Company */,
                                                   ),
+                                                  labelPresent: true,
+                                                  helper: '',
+                                                  helperPresent: false,
+                                                  leadingIconPresent: false,
+                                                  trailingIconPresent: false,
+                                                  hint: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    'cyoksaet' /* Organization name */,
+                                                  ),
+                                                  value: '',
+                                                  onChange: '',
+                                                  onSubmit: '',
+                                                  variant: 'outlined',
+                                                  error: false,
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 16.0)),
+                                            ],
                                           ),
-                                          Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.start,
+                                          Wrap(
+                                            spacing: 16.0,
+                                            runSpacing: 16.0,
+                                            alignment: WrapAlignment.start,
                                             crossAxisAlignment:
-                                                CrossAxisAlignment.center,
+                                                WrapCrossAlignment.start,
+                                            direction: Axis.horizontal,
+                                            runAlignment: WrapAlignment.start,
+                                            verticalDirection:
+                                                VerticalDirection.down,
+                                            clipBehavior: Clip.none,
                                             children: [
-                                              Expanded(
-                                                flex: 1,
-                                                child: wrapWithModel(
-                                                  model: _model.textFieldModel3,
-                                                  updateCallback: () =>
-                                                      safeSetState(() {}),
-                                                  child: TextFieldWidget(
-                                                    label: FFLocalizations.of(
-                                                            context)
-                                                        .getText(
-                                                      'duf475m7' /* Email */,
-                                                    ),
-                                                    labelPresent: true,
-                                                    helper: '',
-                                                    helperPresent: false,
-                                                    leadingIconPresent: false,
-                                                    trailingIconPresent: false,
-                                                    hint: FFLocalizations.of(
-                                                            context)
-                                                        .getText(
-                                                      'n3zw5zws' /* work@company.com */,
-                                                    ),
-                                                    value: '',
-                                                    onChange: '',
-                                                    onSubmit: '',
-                                                    variant: 'outlined',
-                                                    error: false,
+                                              wrapWithModel(
+                                                model: _model.textFieldModel3,
+                                                updateCallback: () =>
+                                                    safeSetState(() {}),
+                                                child: TextFieldWidget(
+                                                  label: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    'duf475m7' /* Email */,
                                                   ),
+                                                  labelPresent: true,
+                                                  helper: '',
+                                                  helperPresent: false,
+                                                  leadingIconPresent: false,
+                                                  trailingIconPresent: false,
+                                                  hint: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    'n3zw5zws' /* work@company.com */,
+                                                  ),
+                                                  value: '',
+                                                  onChange: '',
+                                                  onSubmit: '',
+                                                  variant: 'outlined',
+                                                  error: false,
                                                 ),
                                               ),
-                                              Expanded(
-                                                flex: 1,
-                                                child: wrapWithModel(
-                                                  model: _model.textFieldModel4,
-                                                  updateCallback: () =>
-                                                      safeSetState(() {}),
-                                                  child: TextFieldWidget(
-                                                    label: FFLocalizations.of(
-                                                            context)
-                                                        .getText(
-                                                      'ohz5o722' /* Phone */,
-                                                    ),
-                                                    labelPresent: true,
-                                                    helper: '',
-                                                    helperPresent: false,
-                                                    leadingIconPresent: false,
-                                                    trailingIconPresent: false,
-                                                    hint: FFLocalizations.of(
-                                                            context)
-                                                        .getText(
-                                                      '6lozht0h' /* +55 (00) 00000-0000 */,
-                                                    ),
-                                                    value: '',
-                                                    onChange: '',
-                                                    onSubmit: '',
-                                                    variant: 'outlined',
-                                                    error: false,
+                                              wrapWithModel(
+                                                model: _model.textFieldModel4,
+                                                updateCallback: () =>
+                                                    safeSetState(() {}),
+                                                child: TextFieldWidget(
+                                                  label: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    'ohz5o722' /* Phone */,
                                                   ),
+                                                  labelPresent: true,
+                                                  helper: '',
+                                                  helperPresent: false,
+                                                  leadingIconPresent: false,
+                                                  trailingIconPresent: false,
+                                                  hint: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    '6lozht0h' /* +55 (00) 00000-0000 */,
+                                                  ),
+                                                  value: '',
+                                                  onChange: '',
+                                                  onSubmit: '',
+                                                  variant: 'outlined',
+                                                  error: false,
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 16.0)),
+                                            ],
                                           ),
                                           wrapWithModel(
                                             model: _model.textFieldModel5,
@@ -467,18 +465,18 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                           lineHeight: 1.3,
                                                         ),
                                               ),
-                                              GridView(
-                                                padding: EdgeInsets.zero,
-                                                gridDelegate:
-                                                    SliverGridDelegateWithFixedCrossAxisCount(
-                                                  crossAxisCount: 2,
-                                                  crossAxisSpacing: 16.0,
-                                                  mainAxisSpacing: 16.0,
-                                                  childAspectRatio: 4.0,
-                                                ),
-                                                primary: false,
-                                                shrinkWrap: true,
-                                                scrollDirection: Axis.vertical,
+                                              Wrap(
+                                                spacing: 16.0,
+                                                runSpacing: 16.0,
+                                                alignment: WrapAlignment.start,
+                                                crossAxisAlignment:
+                                                    WrapCrossAlignment.start,
+                                                direction: Axis.horizontal,
+                                                runAlignment:
+                                                    WrapAlignment.start,
+                                                verticalDirection:
+                                                    VerticalDirection.down,
+                                                clipBehavior: Clip.none,
                                                 children: [
                                                   wrapWithModel(
                                                     model:
@@ -598,84 +596,78 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                   ),
                                                 ],
                                               ),
-                                              Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.start,
+                                              Wrap(
+                                                spacing: 16.0,
+                                                runSpacing: 16.0,
+                                                alignment: WrapAlignment.start,
                                                 crossAxisAlignment:
-                                                    CrossAxisAlignment.center,
+                                                    WrapCrossAlignment.start,
+                                                direction: Axis.horizontal,
+                                                runAlignment:
+                                                    WrapAlignment.start,
+                                                verticalDirection:
+                                                    VerticalDirection.down,
+                                                clipBehavior: Clip.none,
                                                 children: [
-                                                  Expanded(
-                                                    flex: 1,
-                                                    child: wrapWithModel(
-                                                      model: _model
-                                                          .textFieldModel10,
-                                                      updateCallback: () =>
-                                                          safeSetState(() {}),
-                                                      child: TextFieldWidget(
-                                                        label:
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                          'sp1ceqpu' /* Desired Frequency */,
-                                                        ),
-                                                        labelPresent: true,
-                                                        helper: '',
-                                                        helperPresent: false,
-                                                        leadingIconPresent:
-                                                            false,
-                                                        trailingIconPresent:
-                                                            false,
-                                                        hint:
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                          'o2qkva1d' /* One-time, Monthly, Quarterly */,
-                                                        ),
-                                                        value: '',
-                                                        onChange: '',
-                                                        onSubmit: '',
-                                                        variant: 'outlined',
-                                                        error: false,
+                                                  wrapWithModel(
+                                                    model:
+                                                        _model.textFieldModel10,
+                                                    updateCallback: () =>
+                                                        safeSetState(() {}),
+                                                    child: TextFieldWidget(
+                                                      label: FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'sp1ceqpu' /* Desired Frequency */,
                                                       ),
+                                                      labelPresent: true,
+                                                      helper: '',
+                                                      helperPresent: false,
+                                                      leadingIconPresent: false,
+                                                      trailingIconPresent:
+                                                          false,
+                                                      hint: FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'o2qkva1d' /* One-time, Monthly, Quarterly */,
+                                                      ),
+                                                      value: '',
+                                                      onChange: '',
+                                                      onSubmit: '',
+                                                      variant: 'outlined',
+                                                      error: false,
                                                     ),
                                                   ),
-                                                  Expanded(
-                                                    flex: 1,
-                                                    child: wrapWithModel(
-                                                      model: _model
-                                                          .textFieldModel11,
-                                                      updateCallback: () =>
-                                                          safeSetState(() {}),
-                                                      child: TextFieldWidget(
-                                                        label:
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                          'z5afocru' /* Desired Timeline */,
-                                                        ),
-                                                        labelPresent: true,
-                                                        helper: '',
-                                                        helperPresent: false,
-                                                        leadingIconPresent:
-                                                            false,
-                                                        trailingIconPresent:
-                                                            false,
-                                                        hint:
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                          'n13xqrkv' /* Expected start date */,
-                                                        ),
-                                                        value: '',
-                                                        onChange: '',
-                                                        onSubmit: '',
-                                                        variant: 'outlined',
-                                                        error: false,
+                                                  wrapWithModel(
+                                                    model:
+                                                        _model.textFieldModel11,
+                                                    updateCallback: () =>
+                                                        safeSetState(() {}),
+                                                    child: TextFieldWidget(
+                                                      label: FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'z5afocru' /* Desired Timeline */,
                                                       ),
+                                                      labelPresent: true,
+                                                      helper: '',
+                                                      helperPresent: false,
+                                                      leadingIconPresent: false,
+                                                      trailingIconPresent:
+                                                          false,
+                                                      hint: FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'n13xqrkv' /* Expected start date */,
+                                                      ),
+                                                      value: '',
+                                                      onChange: '',
+                                                      onSubmit: '',
+                                                      variant: 'outlined',
+                                                      error: false,
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 16.0)),
+                                                ],
                                               ),
                                             ].divide(SizedBox(height: 24.0)),
                                           ),
