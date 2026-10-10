@@ -80,7 +80,8 @@ class _ExploreWidgetState extends State<ExploreWidget> {
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsets.all(40.0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 48.0, 0.0, 48.0),
                           child: Container(
                             constraints: BoxConstraints(
                               maxWidth: 720.0,
@@ -280,7 +281,8 @@ class _ExploreWidgetState extends State<ExploreWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.all(32.0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 48.0, 0.0, 48.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
