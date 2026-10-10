@@ -1314,73 +1314,77 @@ class _RegularizacaoWidgetState extends State<RegularizacaoWidget> {
                                                 lineHeight: 1.25,
                                               ),
                                         ),
-                                        Wrap(
-                                          spacing: 8.0,
-                                          runSpacing: 0.0,
-                                          alignment: WrapAlignment.start,
-                                          crossAxisAlignment:
-                                              WrapCrossAlignment.start,
-                                          direction: Axis.horizontal,
-                                          runAlignment: WrapAlignment.start,
-                                          verticalDirection:
-                                              VerticalDirection.down,
-                                          clipBehavior: Clip.none,
-                                          children: [
-                                            wrapWithModel(
-                                              model: _model.methodStepModel1,
-                                              updateCallback: () =>
-                                                  safeSetState(() {}),
-                                              child: MethodStepWidget(
-                                                desc:
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                  'llele8y0' /* Identify pending items. */,
-                                                ),
-                                                num: '01',
-                                                title:
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                  'guswebah' /* Diagnose */,
-                                                ),
-                                              ),
-                                            ),
-                                            wrapWithModel(
-                                              model: _model.methodStepModel2,
-                                              updateCallback: () =>
-                                                  safeSetState(() {}),
-                                              child: MethodStepWidget(
-                                                desc:
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                  '3q9ngzmz' /* On-site measurements. */,
-                                                ),
-                                                num: '02',
-                                                title:
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                  'vadczzra' /* Survey */,
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(0.0, -1.0),
+                                          child: Wrap(
+                                            spacing: 8.0,
+                                            runSpacing: 0.0,
+                                            alignment: WrapAlignment.start,
+                                            crossAxisAlignment:
+                                                WrapCrossAlignment.start,
+                                            direction: Axis.horizontal,
+                                            runAlignment: WrapAlignment.start,
+                                            verticalDirection:
+                                                VerticalDirection.down,
+                                            clipBehavior: Clip.none,
+                                            children: [
+                                              wrapWithModel(
+                                                model: _model.methodStepModel1,
+                                                updateCallback: () =>
+                                                    safeSetState(() {}),
+                                                child: MethodStepWidget(
+                                                  desc: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    'llele8y0' /* Identify pending items. */,
+                                                  ),
+                                                  num: '01',
+                                                  title: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    'guswebah' /* Diagnose */,
+                                                  ),
                                                 ),
                                               ),
-                                            ),
-                                            wrapWithModel(
-                                              model: _model.methodStepModel3,
-                                              updateCallback: () =>
-                                                  safeSetState(() {}),
-                                              child: MethodStepWidget(
-                                                desc:
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                  'q1f9q18z' /* Authority interface. */,
-                                                ),
-                                                num: '03',
-                                                title:
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                  'wj8s47g0' /* Process */,
+                                              wrapWithModel(
+                                                model: _model.methodStepModel2,
+                                                updateCallback: () =>
+                                                    safeSetState(() {}),
+                                                child: MethodStepWidget(
+                                                  desc: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    '3q9ngzmz' /* On-site measurements. */,
+                                                  ),
+                                                  num: '02',
+                                                  title: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    'vadczzra' /* Survey */,
+                                                  ),
                                                 ),
                                               ),
-                                            ),
-                                          ],
+                                              wrapWithModel(
+                                                model: _model.methodStepModel3,
+                                                updateCallback: () =>
+                                                    safeSetState(() {}),
+                                                child: MethodStepWidget(
+                                                  desc: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    'q1f9q18z' /* Authority interface. */,
+                                                  ),
+                                                  num: '03',
+                                                  title: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    'wj8s47g0' /* Process */,
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                       ].divide(SizedBox(height: 24.0)),
                                     ),

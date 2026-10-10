@@ -1422,7 +1422,7 @@ class _AmbientalWidgetState extends State<AmbientalWidget> {
                                         ),
                                         Wrap(
                                           spacing: 120.0,
-                                          runSpacing: 64.0,
+                                          runSpacing: 48.0,
                                           alignment: WrapAlignment.start,
                                           crossAxisAlignment:
                                               WrapCrossAlignment.start,

@@ -77,24 +77,27 @@ class _RegionWidgetState extends State<RegionWidget> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text(
-                valueOrDefault<String>(
-                  widget.flag,
-                  'FLAG',
-                ),
-                style: FlutterFlowTheme.of(context).titleLarge.override(
-                      font: GoogleFonts.interTight(
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 8.0),
+                child: Text(
+                  valueOrDefault<String>(
+                    widget.flag,
+                    'FLAG',
+                  ),
+                  style: FlutterFlowTheme.of(context).titleLarge.override(
+                        font: GoogleFonts.interTight(
+                          fontWeight: FontWeight.bold,
+                          fontStyle:
+                              FlutterFlowTheme.of(context).titleLarge.fontStyle,
+                        ),
+                        color: FlutterFlowTheme.of(context).primaryText,
+                        fontSize: 40.0,
+                        letterSpacing: 0.0,
                         fontWeight: FontWeight.bold,
                         fontStyle:
                             FlutterFlowTheme.of(context).titleLarge.fontStyle,
                       ),
-                      color: FlutterFlowTheme.of(context).primaryText,
-                      fontSize: 32.0,
-                      letterSpacing: 0.0,
-                      fontWeight: FontWeight.bold,
-                      fontStyle:
-                          FlutterFlowTheme.of(context).titleLarge.fontStyle,
-                    ),
+                ),
               ),
               AutoSizeText(
                 valueOrDefault<String>(
