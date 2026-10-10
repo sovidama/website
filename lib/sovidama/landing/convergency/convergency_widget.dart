@@ -758,6 +758,7 @@ Your Digital Sy... */
                                                     .getText(
                                                   'pizd4gp8' /* CONVERGENCY CORE */,
                                                 ),
+                                                textAlign: TextAlign.center,
                                                 style: FlutterFlowTheme.of(
                                                         context)
                                                     .labelMedium
@@ -808,7 +809,8 @@ Your Digital Sy... */
                                                       .headlineSmall
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFF0F172A),
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
                                             letterSpacing: 0.0,
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
@@ -900,7 +902,8 @@ Your Digital Sy... */
                                                       .headlineSmall
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFF0F172A),
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
                                             letterSpacing: 0.0,
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
@@ -989,7 +992,8 @@ Your Digital Sy... */
                                                       .headlineSmall
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFF0F172A),
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
                                             letterSpacing: 0.0,
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)

@@ -124,7 +124,6 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                   ),
             ),
           Container(
-            height: 40.0,
             decoration: BoxDecoration(
               color: valueOrDefault<Color>(
                 () {
@@ -386,46 +385,26 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                           widget.hint,
                           'Full name',
                         ),
-                        hintStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              font: GoogleFonts.inter(
-                                fontWeight: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .fontWeight,
-                                fontStyle: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .fontStyle,
-                              ),
-                              color: valueOrDefault<Color>(
-                                () {
-                                  if (valueOrDefault<String>(
-                                        widget.variant,
-                                        'outlined',
-                                      ) ==
-                                      'filled') {
-                                    return FlutterFlowTheme.of(context).accent3;
-                                  } else if (valueOrDefault<String>(
-                                        widget.variant,
-                                        'outlined',
-                                      ) ==
-                                      'ghost') {
-                                    return FlutterFlowTheme.of(context).accent3;
-                                  } else {
-                                    return FlutterFlowTheme.of(context).accent3;
-                                  }
-                                }(),
-                                FlutterFlowTheme.of(context).accent3,
-                              ),
-                              letterSpacing: 0.0,
-                              fontWeight: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .fontWeight,
-                              fontStyle: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .fontStyle,
-                              lineHeight: 1.55,
-                            ),
+                        hintStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  font: GoogleFonts.inter(
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
+                                  ),
+                                  color: FlutterFlowTheme.of(context).tertiary,
+                                  letterSpacing: 0.0,
+                                  fontWeight: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .fontWeight,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .fontStyle,
+                                  lineHeight: 1.55,
+                                ),
                         enabledBorder: InputBorder.none,
                         focusedBorder: InputBorder.none,
                         errorBorder: InputBorder.none,
@@ -440,29 +419,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                                   .bodyMedium
                                   .fontStyle,
                             ),
-                            color: valueOrDefault<Color>(
-                              () {
-                                if (valueOrDefault<String>(
-                                      widget.variant,
-                                      'outlined',
-                                    ) ==
-                                    'filled') {
-                                  return FlutterFlowTheme.of(context)
-                                      .primaryText;
-                                } else if (valueOrDefault<String>(
-                                      widget.variant,
-                                      'outlined',
-                                    ) ==
-                                    'ghost') {
-                                  return FlutterFlowTheme.of(context)
-                                      .primaryText;
-                                } else {
-                                  return FlutterFlowTheme.of(context)
-                                      .primaryText;
-                                }
-                              }(),
-                              FlutterFlowTheme.of(context).primaryText,
-                            ),
+                            color: FlutterFlowTheme.of(context).primaryText,
                             letterSpacing: 0.0,
                             fontWeight: FlutterFlowTheme.of(context)
                                 .bodyMedium

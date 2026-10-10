@@ -235,7 +235,7 @@ class _GoDigitalWidgetState extends State<GoDigitalWidget> {
                                       Wrap(
                                         spacing: 24.0,
                                         runSpacing: 16.0,
-                                        alignment: WrapAlignment.start,
+                                        alignment: WrapAlignment.center,
                                         crossAxisAlignment:
                                             WrapCrossAlignment.start,
                                         direction: Axis.horizontal,
